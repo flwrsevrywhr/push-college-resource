@@ -1,0 +1,79 @@
+/*--- BASE ---*/
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+	margin:0;
+	padding:0;
+	text-indent: 0;
+	line-height: 1.3rem;
+	list-style: none;
+}
+
+body{
+	font-family: din-2014,  sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 0.7px; 
+	background: #ffffff;
+}
+
+a{
+	color: #000000;
+	padding: 8px 0px;
+	text-decoration: none;
+}
+
+a:hover{
+	font-size: 110%;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 500;
+	padding-bottom: 24px;
+	margin: 8px 0px;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: 500;
+	padding-bottom: 16px;
+
+}
+
+h3{
+	font-size: 24px;
+	font-weight: 600;
+	padding: 8px 0px;
+
+}
+
+
+
+h4{
+	padding: 4px 0px;
+	margin: 8px 0px;
+	font-size:20px;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+h5{
+	font-size: 18px
+	font-weight: 300;
+}
+
+h6{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+p{
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: .5px;
+}
