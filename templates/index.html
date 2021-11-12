@@ -1,40 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="CSS/style.css">
-        <title>Push | College Resource App</title>
-    </head>
-    <body>
-        <div classs="primary-nav">
-            <div class="logo">
-                <p>Push</p>
-                <p>Support for your best college life</p>
-            </div>
-            <div class="links">
-                <p>Financial Resources</p>
-                <p>Academic Life</p>
-                <p>Social Life</p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUSH Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">PUSH</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <div class="hero-img">
-            <img src="">
-             <h1>Whether you’re just looking to apply to college or you’ve just been accepted, or maybe in your first year and need some support— you’re in the right place.</h1>
-        <div class="articles">
-            <div class="aritcle>
-                <img src="">
-                <p>Article title will go here</p>
-            </div>
-            <div class="aritcle>
-                <img src="">
-                <p>Article title will go here</p>
-            </div>
-            <div class="aritcle>
-                <img src="">
-                <p>Article title will go here</p>
-            </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Programs</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="forums.html" class="navbar__links">Forums</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Support For Your Best College Life</h1>
+        <p class="hero__description">Unlimited Possibilities</p>
+        <button class="main__btn"><a href="#about">About Us</a></button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
         </div>
-    </body>
-    <footer>
-    </footer>
+        <div class="main__content">
+          <h1>What do we do?</h1>
+          <p>Newfound freedom and responsibility can be scary and exciting. Push helps with the transition from high school to 
+              college by providing preselected resources and mentorship programs</p>
+          <button class="main__btn"><a href="academic.html">Academic Resources</a></button>
+          <p><button class="main__btn"><a href="social.html">Social Life Resources</a></button></p>
+          <p><button class="main__btn"><a href="financial.html">Financial Resources</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Our Programs</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Mentorship</h2>
+          <p>We connect you with the best mentor for you</p>
+          <div class="services__btn"><button>Take the survey</button></div>
+        </div>
+        <div class="services__card">
+            <h2>Scholarships</h2>
+            <p>Financial support for low-income households</p>
+            <div class="services__btn"><button>Application</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Buddy Program</h2>
+          <p>Share struggles and knowledge with a buddy</p>
+          <div class="services__btn"><button>Find a buddy</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Speaker Events</h2>
+          <p>Have a PUSHrep come to your school</p>
+          <div class="services__btn"><button>Contact Us</button></div>
+        </div>
+        <div class="services__card">
+          <h2>PUSH Orientation</h2>
+          <p>Still have questions...we got you</p>
+          <div class="services__btn"><button>Calendar</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>We want you to succeed</h1>
+          <h2>Sign Up Today</h2>
+          <p>Whether you're applying, have been accepted, or in your first year of college...we can help</p>
+          <button class="main__btn"><a href="#">Sign Up</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="meettheteam.html">Meet the team</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Contact Us</h2>
+                <a href="/">Contact</a> <a href="/">Support</a>
+                <a href="/">Donations</a>
+              </div>
+          </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">PUSH</a>
+          </div>
+          <p class="website__rights">© PUSH 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
