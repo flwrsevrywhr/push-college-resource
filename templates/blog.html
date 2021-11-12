@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Varela Round', sans-serif;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ffb199  0%, #ff0844 100%);
+    background-size: 100%;
+    display: flex;
+    /* align-items: center; */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Text Boz */
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: #ffb199;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Blog Name</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Tips&Tricks</h2>
+      <h5>11/21/2021, 11:50 AM  2 comments</h5>
+      <form action="/html/tags/html_form_tag_action.cfm" method="post">
+        <textarea name="comments" id="comments" style="width:96%;height:90px;background-color:rgb(253, 249, 249);color:grey;border:none;padding:2%;font:22px/30px sans-serif;">
+        </textarea>
+        <p><button><a href="/">Add comment</a></button></p>
+        <br>
+        </form>
+        <h5>Kenny  11/21/2021, 10:01 AM</h5>
+        <h4>Get organized!</h4>
+        <br>
+        <h5>Joseph  11/21/2021, 9:48 AM</h5>
+        <h4>words words words</h4>
+    </div>
+    <div class="card">
+      <h2>Dorm Life</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <form action="/html/tags/html_form_tag_action.cfm" method="post">
+        <textarea name="comments" id="comments" style="width:96%;height:90px;background-color:rgb(253, 249, 249);color:grey;border:none;padding:2%;font:22px/30px sans-serif;">
+        </textarea>
+        <p><button><a href="/">Add comment</a></button></p>
+        <br>
+        </form>
+        <h5>Kenny  11/21/2021, 10:01 AM</h5>
+        <h4>Coed floors?!?!</h4>
+        <br>
+        <h5>Joseph  11/21/2021, 9:48 AM</h5>
+        <h4>words words words</h4>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3><a href="/">Report abusive content</a></h3>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <p class="website__rights">© PUSH 2021. All rights reserved</p>
+</div>
+
+</body>
+</html>
